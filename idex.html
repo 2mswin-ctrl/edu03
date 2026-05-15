@@ -3,165 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>오션중학교 국어 교실 - 품사 완전 정복</title>
+    <title>선생님께 질문하기 - 오션중학교</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
-        
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            scroll-behavior: smooth;
-        }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-5px);
-            transition: all 0.3s ease;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+        body { font-family: 'Noto Sans KR', sans-serif; }
+        .bg-custom-blue { background-color: #2563eb; }
+        .bg-dark-navy { background-color: #0f172a; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-slate-50 min-h-screen flex items-center justify-center p-4">
 
-    <!-- Header & Hero Section -->
-    <header class="gradient-bg text-white py-16 px-6 text-center">
-        <div class="max-w-4xl mx-auto">
-            <p class="text-blue-200 font-bold tracking-widest mb-2">OCEAN MIDDLE SCHOOL</p>
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">단어의 갈래, <span class="text-yellow-300">품사(品詞)</span> 완전 정복!</h1>
-            <p class="text-lg md:text-xl opacity-90 mb-8">우리말의 성격을 결정짓는 9가지 약속, 함께 알아볼까요?</p>
-            <div class="flex justify-center gap-4">
-                <a href="#criteria" class="bg-white text-purple-700 px-6 py-3 rounded-full font-bold shadow-lg hover:bg-purple-50 transition">분류 기준 알아보기</a>
-                <a href="#types" class="bg-purple-900 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:bg-purple-800 transition">9품사 보러가기</a>
-            </div>
-        </div>
-    </header>
+    <div class="max-w-5xl w-full bg-white rounded-[40px] shadow-2xl overflow-hidden flex flex-col md:flex-row">
+        <!-- 왼쪽 파란색 안내 섹션 -->
+        <div class="bg-custom-blue w-full md:w-5/12 p-10 md:p-14 text-white flex flex-col justify-between">
+            <div>
+                <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight">선생님께 질문하기</h1>
+                <p class="text-blue-100 text-lg mb-12 leading-relaxed opacity-90">
+                    수업 내용, 동아리 가입, 진로 상담 등 궁금한 점이 있다면 언제든 편하게 메시지를 남겨주세요.
+                </p>
 
-    <!-- Section 1: Classification Criteria -->
-    <section id="criteria" class="py-20 px-6 max-w-6xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold mb-4">품사를 나누는 3가지 기준</h2>
-            <div class="h-1 w-20 bg-purple-500 mx-auto"></div>
-            <p class="mt-4 text-gray-600">품사는 형태, 기능, 의미라는 세 가지 잣대로 나눕니다.</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Criterion 1 -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
-                <div class="text-purple-600 text-4xl mb-4">📋</div>
-                <h3 class="text-xl font-bold mb-3">형태 (Form)</h3>
-                <p class="text-gray-600 leading-relaxed">단어의 모양이 변하는가? 변하지 않는가?</p>
-                <ul class="mt-4 text-sm text-gray-500">
-                    <li>• 가변어 (변함)</li>
-                    <li>• 불변어 (안 변함)</li>
-                </ul>
-            </div>
-
-            <!-- Criterion 2 -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
-                <div class="text-purple-600 text-4xl mb-4">⚙️</div>
-                <h3 class="text-xl font-bold mb-3">기능 (Function)</h3>
-                <p class="text-gray-600 leading-relaxed">문장에서 어떤 역할을 수행하는가?</p>
-                <ul class="mt-4 text-sm text-gray-500">
-                    <li>• 체언, 용언, 수식언, 관계언, 독립언</li>
-                </ul>
-            </div>
-
-            <!-- Criterion 3 -->
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover">
-                <div class="text-purple-600 text-4xl mb-4">💡</div>
-                <h3 class="text-xl font-bold mb-3">의미 (Meaning)</h3>
-                <p class="text-gray-600 leading-relaxed">단어가 가진 공통적인 의미가 무엇인가?</p>
-                <ul class="mt-4 text-sm text-gray-500">
-                    <li>• 명사, 대명사, 수사, 동사, 형용사 등 9가지</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 2: 9 Parts of Speech -->
-    <section id="types" class="bg-gray-100 py-20 px-6">
-        <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-4">우리말의 9품사 나무</h2>
-                <p class="text-gray-600">성격에 따라 묶인 5언 9품사 체계를 확인해 보세요.</p>
-            </div>
-
-            <div class="space-y-6">
-                <!-- Group: 체언 -->
-                <div class="bg-white rounded-xl p-6 shadow-sm flex flex-wrap items-center gap-4">
-                    <span class="bg-blue-100 text-blue-600 px-4 py-1 rounded-full font-bold">체언</span>
-                    <div class="flex gap-2">
-                        <span class="border border-blue-200 px-3 py-1 rounded-lg bg-blue-50">명사</span>
-                        <span class="border border-blue-200 px-3 py-1 rounded-lg bg-blue-50">대명사</span>
-                        <span class="border border-blue-200 px-3 py-1 rounded-lg bg-blue-50">수사</span>
+                <div class="space-y-8">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                        <span class="text-lg font-medium">오션중학교 국어 교실</span>
                     </div>
-                    <p class="text-sm text-gray-500 ml-auto italic">"문장의 몸통이 되는 단어들"</p>
-                </div>
-
-                <!-- Group: 용언 -->
-                <div class="bg-white rounded-xl p-6 shadow-sm flex flex-wrap items-center gap-4">
-                    <span class="bg-red-100 text-red-600 px-4 py-1 rounded-full font-bold">용언</span>
-                    <div class="flex gap-2">
-                        <span class="border border-red-200 px-3 py-1 rounded-lg bg-red-50">동사</span>
-                        <span class="border border-red-200 px-3 py-1 rounded-lg bg-red-50">형용사</span>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <span class="text-lg font-medium">쉬는 시간, 점심 시간 방문 환영</span>
                     </div>
-                    <p class="text-sm text-gray-500 ml-auto italic">"주어의 움직임이나 상태를 서술해!"</p>
-                </div>
-
-                <!-- Group: 수식언 -->
-                <div class="bg-white rounded-xl p-6 shadow-sm flex flex-wrap items-center gap-4">
-                    <span class="bg-green-100 text-green-600 px-4 py-1 rounded-full font-bold">수식언</span>
-                    <div class="flex gap-2">
-                        <span class="border border-green-200 px-3 py-1 rounded-lg bg-green-50">관형사</span>
-                        <span class="border border-green-200 px-3 py-1 rounded-lg bg-green-50">부사</span>
-                    </div>
-                    <p class="text-sm text-gray-500 ml-auto italic">"다른 말을 꾸며서 내용을 풍부하게 해"</p>
-                </div>
-
-                <!-- Group: 관계언 -->
-                <div class="bg-white rounded-xl p-6 shadow-sm flex flex-wrap items-center gap-4">
-                    <span class="bg-yellow-100 text-yellow-600 px-4 py-1 rounded-full font-bold">관계언</span>
-                    <div class="flex gap-2">
-                        <span class="border border-yellow-200 px-3 py-1 rounded-lg bg-yellow-50">조사</span>
-                    </div>
-                    <p class="text-sm text-gray-500 ml-auto italic">"단어 사이의 관계를 나타내거나 뜻을 더해"</p>
-                </div>
-
-                <!-- Group: 독립언 -->
-                <div class="bg-white rounded-xl p-6 shadow-sm flex flex-wrap items-center gap-4">
-                    <span class="bg-gray-100 text-gray-600 px-4 py-1 rounded-full font-bold">독립언</span>
-                    <div class="flex gap-2">
-                        <span class="border border-gray-200 px-3 py-1 rounded-lg bg-gray-50">감탄사</span>
-                    </div>
-                    <p class="text-sm text-gray-500 ml-auto italic">"다른 말과 섞이지 않고 독립적으로!"</p>
                 </div>
             </div>
+            
+            <div class="mt-12 flex gap-4 opacity-50">
+                <!-- 하단 로고 아이콘들 (이미지 유사 구현) -->
+                <div class="w-8 h-8 border-2 border-white rounded flex items-center justify-center text-xs font-bold">국</div>
+                <div class="w-8 h-8 border-2 border-white rounded flex items-center justify-center text-xs font-bold">어</div>
+            </div>
         </div>
-    </section>
 
-    <!-- Quiz Section -->
-    <section class="py-20 px-6 text-center">
-        <div class="max-w-2xl mx-auto bg-purple-700 text-white p-10 rounded-3xl shadow-xl">
-            <h2 class="text-2xl font-bold mb-4">오늘의 퀴즈 🎯</h2>
-            <p class="mb-6">'예쁘다'와 '달리다'는 형태가 변할까요?</p>
-            <button onclick="showAnswer()" class="bg-yellow-400 text-purple-900 px-8 py-2 rounded-full font-bold hover:bg-yellow-300">정답 확인하기</button>
-            <p id="quiz-answer" class="mt-6 hidden text-lg font-bold">네! 모양이 변하는 '가변어'이면서 서술하는 '용언'입니다!</p>
+        <!-- 오른쪽 입력 폼 섹션 -->
+        <div class="w-full md:w-7/12 p-10 md:p-14">
+            <form id="consultingForm" class="space-y-6">
+                <div class="grid grid-cols-3 gap-4">
+                    <div>
+                        <label class="block text-gray-500 font-medium mb-2">학년</label>
+                        <select name="grade" class="w-full px-4 py-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <option value="1">1학년</option>
+                            <option value="2">2학년</option>
+                            <option value="3">3학년</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-gray-500 font-medium mb-2">반</label>
+                        <input type="number" name="classRoom" placeholder="예: 2" class="w-full px-4 py-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-500 font-medium mb-2">이름</label>
+                        <input type="text" name="name" placeholder="홍길동" class="w-full px-4 py-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-gray-500 font-medium mb-2">문의 구분</label>
+                    <select name="category" class="w-full px-4 py-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none" required>
+                        <option value="수업 질문">수업 내용 질문</option>
+                        <option value="동아리 상담">동아리 가입/활동 상담</option>
+                        <option value="진로 상담">진로 및 성적 상담</option>
+                        <option value="기타 상담" selected>기타 상담</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-gray-500 font-medium mb-2">내용</label>
+                    <textarea name="message" rows="5" placeholder="궁금한 내용을 자유롭게 적어주세요." class="w-full px-4 py-4 bg-gray-50 border border-gray-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none" required></textarea>
+                </div>
+
+                <button type="submit" id="submitBtn" class="w-full bg-dark-navy text-white py-5 rounded-2xl font-bold text-xl hover:bg-black transition-colors shadow-lg">
+                    메시지 보내기
+                </button>
+            </form>
+            
+            <div id="successMsg" class="hidden mt-6 p-4 bg-green-50 text-green-700 rounded-xl text-center font-medium border border-green-200">
+                메시지가 선생님께 전달되었습니다! 곧 답변 드릴게요.
+            </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12 px-6 text-center">
-        <p class="mb-2">오션중학교 국어과 수업 자료</p>
-        <p class="text-sm">&copy; 2024 국어 선생님. 모든 권리 보유.</p>
-    </footer>
+    </div>
 
     <script>
-        function showAnswer() {
-            const answer = document.getElementById('quiz-answer');
-            answer.classList.toggle('hidden');
-        }
+        const scriptURL = 'YOUR_GOOGLE_SCRIPT_URL_HERE'; // 여기에 배포한 스크립트 URL을 입력하세요.
+        const form = document.getElementById('consultingForm');
+        const btn = document.getElementById('submitBtn');
+        const msg = document.getElementById('successMsg');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            btn.disabled = true;
+            btn.innerText = '전송 중...';
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    btn.classList.add('hidden');
+                    msg.classList.remove('hidden');
+                    form.reset();
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    alert('전송 중 오류가 발생했습니다. 다시 시도해 주세요.');
+                    btn.disabled = false;
+                    btn.innerText = '메시지 보내기';
+                });
+        });
     </script>
 </body>
 </html>
